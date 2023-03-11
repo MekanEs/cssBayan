@@ -53,7 +53,10 @@ label{
 
 
 
-
+.plus{
+    font-style: normal;
+    font-kerning: none;
+}
 
 .memeImg{
     
