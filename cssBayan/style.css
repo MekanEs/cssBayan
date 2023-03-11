@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Base{
+    margin: 2rem auto;
+    width: 90%;
+    color: blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.5) ;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 40px;
+}
+
+
+label{
+    width: 40%;
+    padding: 0.5rem 0;
+    border: 0.1rem solid antiquewhite;
+    border-radius: 1rem;
+   margin: 0.1rem auto;
+}
+
+.memeName{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.memeImg{
+    width: 80%;
+}
+.Img_meme{
+    width: 100%;
+}
+i{
+    transition: transform 0.5s ease;
+}
+#radio1:checked~.label1 .MemeName_1 i{
+    transform: rotate(45deg)
+}
+#radio2:checked~.label2 .MemeName_2 i{
+    transform: rotate(45deg)
+}
+#radio3:checked~.label3 .MemeName_3 i{
+    transform: rotate(45deg)
+}
+#radio4:checked~.label4 .MemeName_4 i{
+    transform: rotate(45deg)
+}
+.Img_meme{
+    max-height: 0;
+    transition: max-height 0.7s ease;
+}
+
+#radio1:checked~.label1 .MemeImg_1 .Img_meme{
+    max-height: 100vh;
+
+}
+#radio2:checked~.label2 .MemeImg_2 .Img_meme{
+    max-height: 100vh;
+}
+#radio3:checked~.label3 .MemeImg_3 .Img_meme{
+    max-height: 100vh;
+}
+#radio4:checked~.label4 .MemeImg_4 .Img_meme{
+    max-height: 100vh;
+}
+
+
+@media (max-width:1920px) {
+    
+
+    .Base:hover{
+        color: black;
+    }
+    label:hover > .memeImg .Img_meme{
+        max-height: 100vh;
+    }
+  label:hover> .memeName i{
+        transform: rotate(45deg)
+    }
+    }
+    .radioBtns{
+        display: none;
+    }
