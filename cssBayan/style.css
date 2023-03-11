@@ -24,7 +24,7 @@ body{
 .Base:hover{
     color: black;
 }
-.Base, label{
+ label{
     cursor: pointer;
 }
 .memeName{
