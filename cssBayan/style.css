@@ -11,7 +11,7 @@ body{
 
 .Base{
     margin: 2rem auto;
-    max-width: 90vw;
+    max-width: 85vw;
     color: blue;
     display: flex;
     align-items: center;
@@ -27,9 +27,7 @@ h1{
     color: black;
     font-size: 3rem;
 }
-.Base:hover{
-    color: black;
-}
+
  label{
     cursor: pointer;
 }
@@ -42,7 +40,7 @@ h1{
 }
 label{
     width: 90%;
-    max-width: 35rem;
+    max-width: 45rem;
     padding: 0.5rem 0.5rem;
     border: 0.1rem solid antiquewhite;
     border-radius: 1rem;
@@ -55,7 +53,7 @@ label{
 
 .plus{
     font-style: normal;
-    font-kerning: none;
+    font-kerning: nonee;
 }
 
 .memeImg{
@@ -144,17 +142,22 @@ i{
    
      
 }
-
-@media (min-width:1220px) {
-   
-
-   
+@media(hover:hover){
     label:hover > .memeImg .Img_meme{
         max-height: 100vh;
     }
   label:hover> .memeName i{
         transform: rotate(45deg)
     }
+    .Base:hover{
+        color: black;
+    }
+}
+@media (min-width:1220px) {
+   
+
+   
+ 
      .memeName{
         font-size: 3rem;
         display: flex;
@@ -186,7 +189,7 @@ i{
         }
         
         .memeName{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             display: flex;
             justify-content: space-between;
         }
