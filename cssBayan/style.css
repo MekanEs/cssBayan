@@ -168,14 +168,14 @@ i{
     .radioBtns{
         display: none;
     }
-    label:active {
-        color:blue;
-     }
+   
      label:active>  .memeImg{
     opacity: 0.6;
      }
      
-    
+     label:active> .memeName {
+        color:blue;
+     }
          
    
      @media (max-width:320px) {
