@@ -64,8 +64,10 @@ label{
 }
 
 i{
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
     height: fit-content;
+    opacity: 0;
+    
 }
 #radio1:checked~.label1 .MemeName_1 i{
     transform: rotate(45deg)
@@ -152,6 +154,10 @@ i{
     .Base:hover{
         color: black;
     }
+    .Base:hover> label div i{
+        opacity: 1;
+    }
+    
 }
 @media (min-width:1220px) {
    
